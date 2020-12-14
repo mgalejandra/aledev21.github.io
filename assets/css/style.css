@@ -1606,6 +1606,10 @@ header {
       display: none;
   }
 
+  .home-wrapper .container .row .col-md-10 .home-content h1{
+    display: none;
+  }
+
   #experience .container .row img{
     display: none;
   }
@@ -1628,6 +1632,7 @@ header {
   #testimonial .container .row .col-md-10 .testimonial span {
     display: none;
   }
+
 }
 
 
