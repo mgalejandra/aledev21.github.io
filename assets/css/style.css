@@ -1522,7 +1522,12 @@ header {
 \*------------------------------------*/
 
 
-@media only screen and (max-width: 991px) {}
+@media only screen and (max-width: 991px) {
+
+    .home-wrapper .container .row .col-md-10 img{
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 767px) {
   .section-header h2.title {
@@ -1548,6 +1553,10 @@ header {
       float: none;
       text-align: center;
   }
+
+  .home-wrapper .container .row .col-md-10 img{
+    display: none;
+}
 }
 
 @media only screen and (max-width: 480px) {
@@ -1573,8 +1582,6 @@ header {
       margin-left: 0px;
   }
 
-
-
   .blog-author .media .media-left {
       display: block;
       padding-right: 0;
@@ -1593,6 +1600,33 @@ header {
 
   .blog-comments .media .media {
       margin:0px -15px;
+  }
+
+  .home-wrapper .container .row .col-md-10 img{
+      display: none;
+  }
+
+  #experience .container .row img{
+    display: none;
+  }
+
+  #experience .container .row h3{
+    display: none;
+    margin-left: 5px;
+  }
+
+  #experience .container .row h5{
+    
+    margin-left: -70px;
+  }
+
+  #experience .container .row .datail-experience{
+    
+    margin-left: -70px;
+  }
+
+  #testimonial .container .row .col-md-10 .testimonial span {
+    display: none;
   }
 }
 
