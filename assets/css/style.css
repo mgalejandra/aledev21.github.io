@@ -1837,3 +1837,15 @@ header {
     
     background-color: red;
 }
+
+.carousel .left > span,
+.carousel .right > span {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel .right > span {
+  left: auto;
+  right: 20px;
+}
