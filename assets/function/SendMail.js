@@ -1,8 +1,8 @@
 //https://smtpjs.com/
 
 $('#BtnSendMail').on('click', function (ev) {
-
-    name = $('#TxtMailName').val();
+    ev.preventDefault();
+    user_name = $('#TxtMailName').val();
     email = $('#TxtMailEmail').val();
     subject = $('#TxtMailSubject').val();
     message = $('#TxtMailMessage').val();
@@ -10,7 +10,8 @@ $('#BtnSendMail').on('click', function (ev) {
     if (!ValidateFields()) {
         return false;
     }
-    SendMailSMTP(name, email, subject, message);
+    
+    SendMailSMTP(user_name, email, subject, message);
 
 });
 
@@ -63,7 +64,7 @@ function ValidateFields(ev) {
 function SendMailSMTP(name, email, subject, message) {
     body = "Nombre:" + name + " Email:" + email + " Mensaje " + message;
     subject = "Conctacto desde el potafolio GITHub. Asunto: " + subject;
-
+    console.log("hola");
     Email.send("alvaro.rivas.p@outlook.com",
                 "alvaro.rivas.p@outlook.com",
                 subject,
